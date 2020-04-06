@@ -10,7 +10,10 @@ type Reducer<S, A> = (state: S, action: A) => S;
 
 type Reducers<S = any, A extends BaseAction = AnyAction> = Reducer<S, A>[];
 
-type RootReducer<R extends Reducers> = Reducer<Parameters<R[0]>[0], Parameters<R[0]>[1]>;
+type RootReducer<R extends Reducers> = Reducer<
+  Parameters<R[0]>[0],
+  Parameters<R[0]>[1]
+>;
 
 const combineReducers = <R extends Reducers>(
   ...reducers: R
@@ -24,4 +27,4 @@ const combineReducers = <R extends Reducers>(
   return newState;
 };
 
-export default combineReducers
+export default combineReducers;

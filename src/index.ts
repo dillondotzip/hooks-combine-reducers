@@ -1,7 +1,4 @@
-import multiState from './multiState'
-import singleState from './singleState'
+import combineReducers from './combineReducers';
+import combineStates from './combineStates';
 
-export {
-  multiState,
-  singleState
-}
+export { combineReducers, combineStates };
