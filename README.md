@@ -18,7 +18,6 @@ const initialState = {
 
 Then create multiple reducer functions:
 
-```
 const reducer1 = (state, action) => {
   switch (action.type) {
     case "ACTION":
@@ -36,7 +35,6 @@ const reducer2 = (state, action) => {
       return state;
   }
 };
-```
 
 And finally combine the reducers:
 
