@@ -16,8 +16,7 @@ const reducer2 = (state, action) =&gt; {
     default:
       return state;
   }
-};
-</code></pre><p></p><p>And finally combine the reducers:</p><pre><code>  const [state, dispatch] = React.useReducer(
+};</code></pre><p></p><p>And finally combine the reducers:</p><pre><code>  const [state, dispatch] = React.useReducer(
     combineReducers({
       keyName1: reducer1,
       keyName2: reducer2
@@ -49,4 +48,4 @@ const reducer2 = (state, action) =&gt; {
   }),
   combineStates([state1, state2])
 );
-</code></pre><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+</code></pre><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
