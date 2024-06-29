@@ -1,7 +1,5 @@
 # Hooks Combine Reducers
 
-Test
-
 Building a complex React app using the `useReducer` hook can lead to long reducers.
 
 It's better to split reducers & states into seperate files. `hooks-combine-reducers` accepts multiple reducer files or states and combines them into a single object.
@@ -18,6 +16,7 @@ const initialState = {
 
 Then create multiple reducer functions:
 
+```
 const reducer1 = (state, action) => {
   switch (action.type) {
     case "ACTION":
@@ -35,6 +34,7 @@ const reducer2 = (state, action) => {
       return state;
   }
 };
+```
 
 And finally combine the reducers:
 
