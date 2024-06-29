@@ -1,7 +1,6 @@
 <h1>Hooks Combine Reducers</h1><p>Building a complex React app using the <code>useReducer</code> hook can lead to long reducers.</p><p>It's better to split reducers &amp; states into seperate files. <code>hooks-combine-reducers</code> accepts multiple reducer files or states and combines them into a single object.</p><h2>How To Use</h2><p>Create an initial state:</p><pre><code>const initialState = {
   key: value
-};
-</code></pre><p>Then create multiple reducer functions:</p><pre><code>const reducer1 = (state, action) =&gt; {
+};</code></pre><p>Then create multiple reducer functions:</p><pre><code>const reducer1 = (state, action) =&gt; {
   switch (action.type) {
     case "ACTION":
       return
@@ -10,9 +9,9 @@
   }
 };
 
-<p>const reducer2 = (state, action) =&gt; {
+const reducer2 = (state, action) =&gt; {
   switch (action.type) {
-    case &quot;ACTION&quot;:
+    case "ACTION":
       return
     default:
       return state;
@@ -50,4 +49,4 @@
   }),
   combineStates([state1, state2])
 );
-</code></pre><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></p>
+</code></pre><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
