@@ -8,45 +8,37 @@ It's better to split reducers & states into seperate files. `hooks-combine-reduc
 
 Create an initial state:
 
-```
-const initialState = {
-  key: value
-};
-
-```
+    const initialState = {
+      key: value
+    };
 
 Then create multiple reducer functions:
 
-```
-const reducer1 = (state, action) => {
-  switch (action.type) {
-    case "ACTION":
-      return
-    default:
-      return state;
-  }
-};
-
-const reducer2 = (state, action) => {
-  switch (action.type) {
-    case "ACTION":
-      return
-    default:
-      return state;
-  }
-};
-
-```
-
+    const reducer1 = (state, action) => {
+      switch (action.type) {
+        case "ACTION":
+          return
+        default:
+          return state;
+      }
+    };
+    
+    const reducer2 = (state, action) => {
+      switch (action.type) {
+        case "ACTION":
+          return
+        default:
+          return state;
+      }
+    };
+    
 And finally combine the reducers:
 
-```
-  const [state, dispatch] = React.useReducer(
-    combineReducers({
-      keyName1: reducer1,
-      keyName2: reducer2
-    }),
-    initialState
-  );
-
-```
+      const [state, dispatch] = React.useReducer(
+        combineReducers({
+          keyName1: reducer1,
+          keyName2: reducer2
+        }),
+        initialState
+      );
+    
