@@ -12,6 +12,7 @@ Create an initial state:
 const initialState = {
   key: value
 };
+
 ```
 
 Then create multiple reducer functions:
@@ -34,6 +35,7 @@ const reducer2 = (state, action) => {
       return state;
   }
 };
+
 ```
 
 And finally combine the reducers:
@@ -46,4 +48,5 @@ And finally combine the reducers:
     }),
     initialState
   );
+
 ```
