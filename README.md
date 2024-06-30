@@ -34,7 +34,6 @@ const reducer2 = (state, action) => {
       return state;
   }
 };
-
 ```
 
 And finally combine the reducers:
@@ -47,5 +46,4 @@ And finally combine the reducers:
     }),
     initialState
   );
-
 ```
