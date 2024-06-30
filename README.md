@@ -12,7 +12,6 @@ Create an initial state:
 const initialState = {
   key: value
 };
-
 ```
 
 Then create multiple reducer functions:
