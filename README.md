@@ -44,6 +44,7 @@ const [state, dispatch] = React.useReducer(
       keyName1: reducer1,
       keyName2: reducer2
     }),
+
     initialState
   );
 
@@ -54,13 +55,9 @@ const [state, dispatch] = React.useReducer(
 You may want to separate state into different objects for better organization.
 
 ```
-import { combineReducers, combineStates } from 'hooks-combine-reducers';
-
-const state1 = {
+import { combineReducers, combineStates } from 'hooks-combine-reducers';const state1 = {
   ...
-}
-
-const state2 = {
+}const state2 = {
   ...
 }const reducer1 = (state, action) => {
   switch (action.type) {
