@@ -8,6 +8,7 @@ It's better to split reducers & states into seperate files. `hooks-combine-reduc
 | ----------- | ------ |
 | name        | string |
 | description | string |
+| type        | string |
 
 ## How To Use
 
